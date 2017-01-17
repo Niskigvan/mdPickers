@@ -286,7 +286,7 @@ function CalendarCtrl($scope) {
             self.updateDaysInMonth();
     })
     
-    self.updateDaysInMonth();
+    
 }
 
 module.directive("mdpCalendar", ["$animate", function($animate) {
@@ -340,6 +340,7 @@ module.directive("mdpCalendar", ["$animate", function($animate) {
                     }
                 }
             });
+	    ctrl.updateDaysInMonth();
         }
     }
 }]);
